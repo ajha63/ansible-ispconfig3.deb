@@ -10,7 +10,26 @@ Debian 7 Wheezy installed
 Role Variables
 --------------
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+	\# vars file for ispconfig3.deb
+	ispconfig3_ip: 
+ 	 - 192.168.1.1
+
+	ispconfig3_fqdn: 
+	  - mydom.example.com
+
+	\# packages name
+	sshd_packages:
+	  - openssh-server
+
+	vim-nox_packages:
+	  - vim-nox
+
+	sshd_service: 
+	  - ssh
+
+	\# config files
+	sshd_file_config: 
+	  - /etc/ssh/sshd_config
 
 Dependencies
 ------------
@@ -29,9 +48,9 @@ Including an example of how to use your role (for instance, with variables passe
 License
 -------
 
-BSD
+[GPLv3](http://www.gnu.org/licenses/gpl-3.0.en.html "GNU General Public License version 3")
 
 Author Information
 ------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+About me. Alvaro Jesus Hernandez <hernandez.alvaro@gmail.com> Twitter: @ajha63
