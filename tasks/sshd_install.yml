@@ -1,0 +1,9 @@
+---
+# sshd_install.yml
+# install open ssh server
+- name: apt-get install openssh-server
+  action: apt pkg={{ item }} state={{ sshd_pkg_state }}
+  tags:
+    - sshd
+    - setup
+    with_items: sshd_packages

@@ -1,0 +1,5 @@
+---
+# tasks file for ispconfig3.deb
+# Debian(setup)  specific tasks
+- include: sshd_install.yml
+  when: "ansible_os_family == 'Debian'"

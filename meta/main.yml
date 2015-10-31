@@ -1,0 +1,16 @@
+---
+galaxy_info:
+  author: Alvaro Hernandez
+  description: Set a ISPConfig3 environment based on Debian 7 Wheezy, Nginx, BIND and Dovecot
+  company: your company (optional)
+  license: license GPLv3
+  min_ansible_version: 1.2
+  #
+  platforms:
+  - name: Debian
+    versions:
+    - wheezy
+  #
+  categories:
+  - web
+dependencies: []

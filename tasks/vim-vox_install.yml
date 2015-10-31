@@ -1,0 +1,9 @@
+---
+# vim-nox_install.yml
+# install vim-nox
+- name: apt-get install vim-nox
+  action: apt pkg={{ item }} state={{ vim_pkg_state }}
+  tags:
+    - vim
+    - install
+    with_items: vim-nox_packages
