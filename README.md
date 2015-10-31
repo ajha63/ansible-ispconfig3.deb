@@ -10,14 +10,14 @@ Debian 7 Wheezy installed
 Role Variables
 --------------
 
-	\# vars file for ispconfig3.deb
+	# vars file for ispconfig3.deb
 	ispconfig3_ip: 
  	 - 192.168.1.1
 
 	ispconfig3_fqdn: 
 	  - mydom.example.com
 
-	\# packages name
+	# packages name
 	sshd_packages:
 	  - openssh-server
 
@@ -27,7 +27,7 @@ Role Variables
 	sshd_service: 
 	  - ssh
 
-	\# config files
+	# config files
 	sshd_file_config: 
 	  - /etc/ssh/sshd_config
 
@@ -53,4 +53,5 @@ License
 Author Information
 ------------------
 
-About me. Alvaro Jesus Hernandez <hernandez.alvaro@gmail.com> Twitter: @ajha63
+About me. Alvaro Jesus Hernandez <hernandez.alvaro@gmail.com> Twitter: @ajha63 
+Blog [Cacho y Capote](http://www.alvaro.web.ve "Cacho y Capote")
